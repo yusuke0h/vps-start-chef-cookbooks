@@ -1,0 +1,26 @@
+{
+  "run_list": [
+    "recipe[user]",
+    "recipe[site_user]",
+    "recipe[sudo]",
+    "recipe[openssh]",
+    "recipe[simple_iptables]",
+    "recipe[site_simple_iptables]"
+  ],
+  "automatic": {
+    "ipaddress": "153.121.33.196"
+  },
+  "authorization": {
+    "sudo": {
+      "users": ["yusuke"],
+      "passwordless": "true"
+    }
+  },
+  "openssh": {
+    "server": {
+      "permit_root_login":"no",
+      "port":"10023",
+      "password_authentication":"no"
+    }
+  }
+}

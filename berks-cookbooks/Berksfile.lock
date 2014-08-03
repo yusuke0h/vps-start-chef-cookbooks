@@ -1,0 +1,5 @@
+DEPENDENCIES
+  user
+
+GRAPH
+  user (0.3.0)

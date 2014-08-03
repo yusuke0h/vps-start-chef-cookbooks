@@ -1,0 +1,15 @@
+DEPENDENCIES
+  openssh
+  simple_iptables
+    git: git://github.com/dcrosta/cookbook-simple-iptables.git
+    revision: 15aa4832ad733a0c803c2cac8af6f997d6266319
+  sudo
+  user
+
+GRAPH
+  iptables (0.13.2)
+  openssh (1.3.4)
+    iptables (>= 0.0.0)
+  simple_iptables (0.6.5)
+  sudo (2.6.0)
+  user (0.3.0)
